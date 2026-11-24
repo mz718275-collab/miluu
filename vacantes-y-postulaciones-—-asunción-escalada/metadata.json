@@ -1,0 +1,6 @@
+{
+  "name": "Vacantes y Postulaciones — Asunción Escalada",
+  "description": "Sistema de gestión de ofertas laborales, candidaturas, control de cupos con concurrencia, mapa OpenStreetMap con exportación a Google Maps e integración Render, GitHub y Supabase.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

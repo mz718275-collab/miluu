@@ -1,0 +1,23 @@
+services:
+  - type: web
+    name: vacantes-postulaciones-escalada
+    runtime: node
+    plan: free
+    buildCommand: npm install && npm run build
+    startCommand: npm start
+    healthCheckPath: /api/health
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: ADMIN_PASSCODE
+        sync: false
+      - key: DATABASE_URL
+        sync: false
+      - key: SUPABASE_URL
+        sync: false
+      - key: SUPABASE_SERVICE_ROLE_KEY
+        sync: false
+      - key: GITHUB_REPO
+        sync: false
+      - key: RENDER_SERVICE_URL
+        sync: false
